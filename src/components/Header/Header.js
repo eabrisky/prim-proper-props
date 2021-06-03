@@ -1,6 +1,6 @@
-function Header ({header}){
+function Header (props){
     return (
-        <h1>{header}</h1>
+        <h1>Prim Proper Props</h1>
     )
 } // end Header fn
 
