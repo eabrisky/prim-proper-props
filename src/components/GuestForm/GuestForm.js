@@ -1,5 +1,3 @@
-import {useState} from 'react';
-
 function GuestForm({newGuestName, setNewGuestName, newGuestMeal, setNewGuestMeal, handleSubmit}){
 
     return (

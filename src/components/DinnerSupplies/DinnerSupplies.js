@@ -1,16 +1,12 @@
-function DinnerSupplies({guestList}) {
+import SilverWare from '../SilverWare/SilverWare';
+
+function DinnerSupplies({ guestList }) {
     return (
         <>
             <h2>Dinner Supplies</h2>
-            <div>
-                Spoons: {guestList.length * 2}
-            </div>
-            <div>
-                Forks: {guestList.length * 2}
-            </div>
-            <div>
-                Knives: {guestList.length * 2}
-            </div>
+            <SilverWare name="Spoons" count={guestList.length} />
+            <SilverWare name="Forks" count={guestList.length} />
+            <SilverWare name="Knives" count={guestList.length} />
         </>
     )
 } // end DinnerSupplies fn
