@@ -1,6 +1,12 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import GuestList from '../GuestList/GuestList';
+import DinnerSupplies from '../DinnerSupplies/DinnerSupplies';
+import GuestForm from '../GuestForm/GuestForm';
+
 
 function App() {
   let [guestList, setGuestList] = useState([]);
@@ -50,7 +56,8 @@ function App() {
     }
   }
 
-  console.log(newGuestMeal)
+  console.log(newGuestMeal);
+
   return (
     <div className="App">
       <header>
