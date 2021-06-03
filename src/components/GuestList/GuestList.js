@@ -14,6 +14,7 @@ function GuestList({ guestList }) {
                         <tr key={guest.id}>
                             <td>{guest.name}</td>
                             <td>{String(guest.kidsMeal)}</td>
+                            <td><button onClick={() => console.log(guest)}>Delete</button></td>
                         </tr>
                     ))}
                 </tbody>
