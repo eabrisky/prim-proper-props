@@ -60,9 +60,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Prim Proper Props</h1>
-      </header>
+      <Header header={"Prim Proper Props"}/>
       <h2>Party Leader</h2>
       {guestList[0] && <h3>{guestList[0].name}</h3>}
       <h2>Add a new guest</h2>
@@ -134,10 +132,7 @@ function App() {
       <div>
         Knives: {guestList.length * 2}
       </div>
-      <footer>
-        <h3>Have fun!</h3>
-        <p>Don't forget to mind your Ps and Qs!</p>
-      </footer>
+      <Footer footer="Have fun!" p="Don't forget to mind your Ps and Qs!" />
     </div>
   );
 }
